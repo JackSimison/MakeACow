@@ -1,0 +1,12 @@
+
+public class MainCow {
+
+	
+	public static void main(String[] args){
+	
+	CowFrame a = new CowFrame ();
+	a.setDefaultCloseOperation(CowFrame.EXIT_ON_CLOSE);
+	a.setVisible(true);
+	
+}
+}
