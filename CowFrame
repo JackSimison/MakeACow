@@ -1,0 +1,49 @@
+
+import java.awt.*;			/* used for Color, Point, Graphics */
+import javax.swing.JFrame;
+import java.awt.color.*;	//Acquired from web site with URL: http://algs4.cs.princeton.edu/12oop/Draw.java
+
+
+public class CowFrame extends JFrame{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public static final String EXIT_ON_CLOSE = null;
+		
+	
+	
+	public static void main(String[] a) {	//Window
+		JFrame Frame = new JFrame();
+		Frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Frame.setSize(350, 500);
+		Frame.setVisible(true);
+		
+		
+	}
+	
+	public void paintComponent(Graphics g){ //Head of Cow
+		g.drawOval(200, 200, 25, 20);
+		g.setColor(Color.BLACK);
+		g.fillOval(200, 200, 25, 20);
+		
+		}
+	
+	public void paintComponent1(Graphics g){ //Body of Cow
+		g.drawRect(100, 225, 150, 75);
+		g.fillRect(100, 225, 150, 75);
+		g.setColor(Color.WHITE);
+		
+	}
+	public void setVisible(boolean b) {
+		
+		
+	}
+
+	public void setDefaultCloseOperation(String exitOnClose) {
+		// TODO Auto-generated method stub
+		
+	}
+}
+
